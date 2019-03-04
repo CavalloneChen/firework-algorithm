@@ -15,7 +15,7 @@ Install
 To install the package, run the following commands:
 
 ```
-git clone git@github.com:wead-hsu/firework-algorithm.git
+git clone https://github.com/CavalloneChen/firework-algorithm.git
 cd firework-algorithm
 python3 setup.py install
 ```
