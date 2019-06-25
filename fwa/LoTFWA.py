@@ -85,7 +85,6 @@ class LoTFWA(object):
         np.random.seed(int(os.getpid()*time.clock()))
 
     def run(self):
-        begin_time = time.clock()
 
         fireworks, fits = self._init_fireworks()
         for idx in range(self.max_iter):
@@ -95,9 +94,8 @@ class LoTFWA(object):
 
             fireworks, fits = self.iter(fireworks, fits)
         
-        self.time = time.clock() - begin_time
 
-        return self.best_fit, self.time
+        return self.best_fit
 
     def iter(self, fireworks, fits):
     
